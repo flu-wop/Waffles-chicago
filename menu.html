@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Chicago Waffles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: "#FFF8EF",
+          butter: "#FDEFD9",
+          brown: "#4D2B24",
+          "brown-light": "#7A4B3E",
+          orange: "#FA7D23",
+          "orange-light": "#FFA45C",
+        },
+        fontFamily: {
+          serif: ["Fraunces", "serif"],
+          sans: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #FFF8EF; color: #4D2B24; }
+  h1, h2, h3, .serif { font-family: 'Fraunces', serif; }
+  .grain-shadow { box-shadow: 0 20px 40px -12px rgba(77,43,36,0.18); }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="logo2.svg" alt="Chicago Waffles" class="h-9 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-9 text-[15px] font-medium text-brown/80">
+      <a href="menu.html" class="text-orange">Menu</a>
+      <a href="index.html#story" class="hover:text-orange transition">Our Story</a>
+      <a href="contact.html" class="hover:text-orange transition">Locations</a>
+      <a href="catering.html" class="hover:text-orange transition">Catering</a>
+      <a href="gallery.html" class="hover:text-orange transition">Gallery</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="contact.html" class="hidden sm:inline-block text-sm font-semibold text-brown/80 hover:text-orange transition px-4 py-2">Reserve a Table</a>
+      <button onclick="alert('Demo only — this connects to your live ordering platform.')" class="inline-block bg-orange hover:bg-orange-light transition text-white text-sm font-semibold px-5 py-3 rounded-full grain-shadow">Order Online</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 pt-16 pb-10 text-center">
+  <span class="text-orange text-sm font-semibold uppercase tracking-wide">Full Menu</span>
+  <h1 class="text-4xl md:text-6xl font-semibold text-brown mt-3 mb-4">Made from scratch, every plate.</h1>
+  <p class="text-brown-light max-w-2xl mx-auto">Prices reflect our South Loop location and may vary slightly by neighborhood.</p>
+</section>
+
+<!-- WAFFLES WONDERLAND -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Waffles Wonderland</h2>
+  <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Original Belgian</p><p class="text-sm text-brown-light">Golden, airy, and timeless — our signature waffle that defines simple perfection.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Bacon & Chicken</p><p class="text-sm text-brown-light">Crispy fried chicken over a bacon-infused waffle, topped with more bacon, chives, and spicy maple drizzle.</p></div><p class="font-semibold text-orange whitespace-nowrap">$19.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Blueberry Compote & Chicken</p><p class="text-sm text-brown-light">Crispy fried chicken meets our house blueberry compote on a golden waffle.</p></div><p class="font-semibold text-orange whitespace-nowrap">$19.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Dubai Chocolate Dream</p><p class="text-sm text-brown-light">Chocolate-infused waffle layered with chocolate cream, pistachio paste, phyllo dough, chocolate drizzle, and strawberries.</p></div><p class="font-semibold text-orange whitespace-nowrap">$21.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Cheddar & Short Rib</p><p class="text-sm text-brown-light">Savory cheddar waffle topped with tender braised short ribs and fresh chives.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Chicago's Waffles Best</p><p class="text-sm text-brown-light">Two scoops of vanilla ice cream, strawberries, blueberries, chocolate chips, candied walnuts, and caramel sauce.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Blueberry Lemon Cheesecake</p><p class="text-sm text-brown-light">Original Belgian waffle topped with homemade lemon cheesecake cream, fresh blueberries.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Waffle Flight</p><p class="text-sm text-brown-light">A sampler of red velvet, chocolate, Liège, and matcha waffles with pistachio, candied ginger, strawberries, bananas.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
+  </div>
+</section>
+
+<!-- RUSTIC SKILLETS -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Rustic Skillets</h2>
+  <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-brown-light">
+    <div><p class="font-serif font-semibold text-brown">Build Your Own Skillet</p><p>Two eggs any style with potatoes and a choice of toast or pancakes. Add ingredients for an extra price.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Meat Lover's Skillet</p><p>Two eggs any style with potatoes, bacon, ham, sausage and blended cheeses.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Short Ribs Shack Skillet</p><p>Two eggs any style with potatoes, braised short ribs, roasted onions, mushrooms and cheddar cheese.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Corned Beef Hash Heaven</p><p>Three eggs, corned beef hash, potatoes and a choice of toast or pancakes.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Skirt Steak & Eggs</p><p>Two eggs any style with a 6oz skirt steak, potatoes and a choice of toast or pancakes.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Country Crunch & Gravy</p><p>Two eggs any style with hand battered chicken tenders topped with homemade gravy.</p></div>
+  </div>
+</section>
+
+<!-- SIGNATURE OMELETS -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Signature Omelets</h2>
+  <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-brown-light">
+    <div><p class="font-serif font-semibold text-brown">Mediterranean Sunrise</p><p>Spinach, feta cheese and tomatoes.</p></div>
+    <div><p class="font-serif font-semibold text-brown">Veggie Harvest</p><p>Mushrooms, onions, tomatoes, red peppers and spinach.</p></div>
+  </div>
+</section>
+
+<!-- HOLA BREAKFAST -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">¡Hola Breakfast!</h2>
+  <div class="text-sm text-brown-light">
+    <p class="font-serif font-semibold text-brown">Buenos Días Burrito</p>
+    <p>Flour tortilla with scrambled eggs, pork chorizo sausage, tomatoes, onions, jalapeños, red peppers, guacamole, sour cream and blended cheeses. Served with potatoes.</p>
+  </div>
+</section>
+
+<!-- FRENCHIE BITES -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Frenchie Bites</h2>
+  <div class="text-sm text-brown-light">
+    <p class="font-serif font-semibold text-brown">French Toast Flight</p>
+    <p>Three amazing French toast: very berry, red velvet and cinnamon swirl.</p>
+  </div>
+</section>
+
+<!-- PANCAKE PARADISE -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Pancake Paradise</h2>
+  <div class="text-sm text-brown-light">
+    <p class="font-serif font-semibold text-brown">Nutella Dream Pancakes</p>
+    <p>Homemade pancakes topped with Nutella, vanilla sauce and wafer sticks.</p>
+  </div>
+</section>
+
+<!-- WAFFLE SANDWICHES -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Sandwiches</h2>
+  <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">The Classic Breakfast Sandwich</p><p class="text-sm text-brown-light">Over-medium egg, crispy bacon, and melted American cheese on a buttery bun. Served with fries or fruit.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Monte Cristo</p><p class="text-sm text-brown-light">French toast, ham & Swiss cheese with waffle fries.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Pepper & Egg</p><p class="text-sm text-brown-light">Omelette-style eggs, mozzarella, red & green peppers, onions on ciabatta with waffle fries.</p></div><p class="font-semibold text-orange whitespace-nowrap">$13.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Ham & Bacon</p><p class="text-sm text-brown-light">Toasted bagel with ham, bacon, scrambled egg, American cheese, spinach, tomato & fruit.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+  </div>
+</section>
+
+<!-- COCKTAILS -->
+<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+  <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-2 border-b border-orange/20 pb-3">Cocktails</h2>
+  <p class="text-xs text-brown-light mt-2 mb-6">Must be 21 or older to order.</p>
+  <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Chicago Waffles Café Martini</p><p class="text-sm text-brown-light">Vodka, Baileys, white Godiva, dark Godiva, Kahlua, espresso shot.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Mimosa</p><p class="text-sm text-brown-light">Prosecco with orange, pineapple, or cranberry juice.</p></div><p class="font-semibold text-orange whitespace-nowrap">$10.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Bloody Mary</p><p class="text-sm text-brown-light">Vodka, homemade hot mix, fresh cilantro, jalapeños, red onions, celery, olives, pickles.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Classic Margarita</p><p class="text-sm text-brown-light">Tequila blanco, fresh strawberries, homemade sour-mix, orange liqueur.</p></div><p class="font-semibold text-orange whitespace-nowrap">$13.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Strawberry Margarita</p><p class="text-sm text-brown-light">Tequila reposado, fresh strawberries, homemade sour-mix, orange liqueur, agave.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+    <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Pineapple Margarita</p><p class="text-sm text-brown-light">Tequila blanco, fresh lime & pineapple, Cointreau, simple syrup.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
+  </div>
+</section>
+
+<section class="max-w-5xl mx-auto px-6 md:px-10 pb-20 text-center">
+  <p class="text-sm text-brown-light">Consumer Advisory: consuming raw or undercooked eggs, meat, poultry, or seafood may increase your risk of foodborne illness.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="logo2.svg" alt="Chicago Waffles" class="h-8 w-auto mb-4">
+      <p class="text-sm text-brown-light leading-relaxed">Crafting exceptional culinary experiences with passion, quality, and dedication since 2011.</p>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Quick Links</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="menu.html" class="hover:text-orange">Menu</a></li>
+        <li><a href="contact.html" class="hover:text-orange">Locations</a></li>
+        <li><a href="catering.html" class="hover:text-orange">Catering</a></li>
+        <li><a href="gallery.html" class="hover:text-orange">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Follow</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="https://www.instagram.com/chicagowaffles/" class="hover:text-orange">Instagram</a></li>
+        <li><a href="https://www.facebook.com/chicagowaffles/" class="hover:text-orange">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@chicago_waffles" class="hover:text-orange">TikTok</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Visit</p>
+      <p class="text-sm text-brown-light">Five locations across Chicago &amp; Oak Park.</p>
+    </div>
+  </div>
+  <div class="border-t border-orange/15 py-6 text-center text-xs text-brown-light">© 2026 Chicago Waffles. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

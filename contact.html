@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Locations — Chicago Waffles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: "#FFF8EF", butter: "#FDEFD9", brown: "#4D2B24",
+          "brown-light": "#7A4B3E", orange: "#FA7D23", "orange-light": "#FFA45C",
+        },
+        fontFamily: { serif: ["Fraunces", "serif"], sans: ["Inter", "sans-serif"] },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #FFF8EF; color: #4D2B24; }
+  h1, h2, h3, .serif { font-family: 'Fraunces', serif; }
+  .grain-shadow { box-shadow: 0 20px 40px -12px rgba(77,43,36,0.18); }
+</style>
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3"><img src="logo2.svg" alt="Chicago Waffles" class="h-9 w-auto"></a>
+    <nav class="hidden lg:flex items-center gap-9 text-[15px] font-medium text-brown/80">
+      <a href="menu.html" class="hover:text-orange transition">Menu</a>
+      <a href="index.html#story" class="hover:text-orange transition">Our Story</a>
+      <a href="contact.html" class="text-orange">Locations</a>
+      <a href="catering.html" class="hover:text-orange transition">Catering</a>
+      <a href="gallery.html" class="hover:text-orange transition">Gallery</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="contact.html" class="hidden sm:inline-block text-sm font-semibold text-brown/80 hover:text-orange transition px-4 py-2">Reserve a Table</a>
+      <button onclick="alert('Demo only — this connects to your live ordering platform.')" class="inline-block bg-orange hover:bg-orange-light transition text-white text-sm font-semibold px-5 py-3 rounded-full grain-shadow">Order Online</button>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-5xl mx-auto px-6 md:px-10 pt-16 pb-10 text-center">
+  <span class="text-orange text-sm font-semibold uppercase tracking-wide">Find Us</span>
+  <h1 class="text-4xl md:text-6xl font-semibold text-brown mt-3 mb-4">Contact &amp; Locations</h1>
+  <p class="text-brown-light max-w-2xl mx-auto">Five neighborhoods, one standard. Reach out for questions, feedback, or catering.</p>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 md:px-10 pb-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+    <h3 class="font-serif text-lg font-semibold text-brown mb-1">South Loop</h3>
+    <p class="text-sm text-brown-light">1400 S Michigan Ave, Chicago, IL 60605 · Original location, est. 2011</p>
+    <p class="text-sm text-brown-light mt-2">(312) 854-8572<br>Mon–Fri 7am–3pm · Sat–Sun 7am–4pm</p>
+  </div>
+  <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+    <h3 class="font-serif text-lg font-semibold text-brown mb-1">West Loop</h3>
+    <p class="text-sm text-brown-light">1104 W Madison St, Chicago, IL 60607</p>
+    <p class="text-sm text-brown-light mt-2">(312) 837-3935<br>Mon–Fri 7am–2pm · Sat–Sun 7am–3pm</p>
+  </div>
+  <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+    <h3 class="font-serif text-lg font-semibold text-brown mb-1">Lincoln Square</h3>
+    <p class="text-sm text-brown-light">4768 N Lincoln Ave, Chicago, IL 60625</p>
+    <p class="text-sm text-brown-light mt-2">(773) 654-3233<br>Mon–Fri 7am–2pm · Sat–Sun 7am–3pm</p>
+  </div>
+  <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+    <h3 class="font-serif text-lg font-semibold text-brown mb-1">Oak Park</h3>
+    <p class="text-sm text-brown-light">726 Lake St, Oak Park, IL 60301</p>
+    <p class="text-sm text-brown-light mt-2">(847) 921-4003</p>
+  </div>
+  <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+    <h3 class="font-serif text-lg font-semibold text-brown mb-1">Willowbrook</h3>
+    <p class="text-sm text-brown-light">10S642 Kingery Hwy, Willowbrook, IL 60527</p>
+    <p class="text-sm text-brown-light mt-2">(630) 568-3199<br>Wed–Fri 7am–2pm · Sat–Sun 7am–3pm · Closed Tue</p>
+  </div>
+  <div class="rounded-2xl p-6 bg-brown text-cream flex flex-col justify-center">
+    <p class="text-sm font-medium mb-2">Catering pickup &amp; delivery</p>
+    <p class="text-xs text-cream/70 leading-relaxed">(312) 877-1560</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="bg-brown text-cream">
+  <div class="max-w-2xl mx-auto px-6 md:px-10 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-3 text-center">Get in touch</h2>
+    <p class="text-cream/70 text-sm text-center mb-8">Questions, comments, or suggestions — we'd love to hear from you.</p>
+    <form onsubmit="event.preventDefault(); alert('Demo only — this connects to your live contact form.');" class="space-y-4">
+      <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-cream/20 text-cream placeholder-cream/50 focus:outline-none focus:border-orange-light">
+      <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-cream/20 text-cream placeholder-cream/50 focus:outline-none focus:border-orange-light">
+      <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-cream/20 text-cream placeholder-cream/50 focus:outline-none focus:border-orange-light"></textarea>
+      <button type="submit" class="w-full bg-orange hover:bg-orange-light transition text-white font-semibold py-4 rounded-full">Send Message</button>
+    </form>
+    <p class="text-xs text-cream/50 text-center mt-6">Join our email list and get 20% off your first order — available when you dine with us at any location.</p>
+  </div>
+</section>
+
+<footer class="border-t border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="logo2.svg" alt="Chicago Waffles" class="h-8 w-auto mb-4">
+      <p class="text-sm text-brown-light leading-relaxed">Crafting exceptional culinary experiences with passion, quality, and dedication since 2011.</p>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Quick Links</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="menu.html" class="hover:text-orange">Menu</a></li>
+        <li><a href="contact.html" class="hover:text-orange">Locations</a></li>
+        <li><a href="catering.html" class="hover:text-orange">Catering</a></li>
+        <li><a href="gallery.html" class="hover:text-orange">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Follow</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="https://www.instagram.com/chicagowaffles/" class="hover:text-orange">Instagram</a></li>
+        <li><a href="https://www.facebook.com/chicagowaffles/" class="hover:text-orange">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@chicago_waffles" class="hover:text-orange">TikTok</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Visit</p>
+      <p class="text-sm text-brown-light">Five locations across Chicago &amp; Oak Park.</p>
+    </div>
+  </div>
+  <div class="border-t border-orange/15 py-6 text-center text-xs text-brown-light">© 2026 Chicago Waffles. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
