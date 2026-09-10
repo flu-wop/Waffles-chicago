@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicago Waffles — Breakfast & Brunch Since 2011</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: "#FFF8EF",
+          butter: "#FDEFD9",
+          brown: "#4D2B24",
+          "brown-light": "#7A4B3E",
+          orange: "#FA7D23",
+          "orange-light": "#FFA45C",
+        },
+        fontFamily: {
+          serif: ["Fraunces", "serif"],
+          sans: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #FFF8EF; color: #4D2B24; }
+  h1, h2, h3, .serif { font-family: 'Fraunces', serif; }
+  .img-cover { object-fit: cover; width: 100%; height: 100%; }
+  .grain-shadow { box-shadow: 0 20px 40px -12px rgba(77,43,36,0.18); }
+  .badge-ring { border: 1.5px solid rgba(250,125,35,0.35); }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="logo2.svg" alt="Chicago Waffles" class="h-9 w-auto">
+    </a>
+    <nav class="hidden lg:flex items-center gap-9 text-[15px] font-medium text-brown/80">
+      <a href="#menu" class="hover:text-orange transition">Menu</a>
+      <a href="#story" class="hover:text-orange transition">Our Story</a>
+      <a href="#locations" class="hover:text-orange transition">Locations</a>
+      <a href="#catering" class="hover:text-orange transition">Catering</a>
+      <a href="#gift" class="hover:text-orange transition">Gift Cards</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#locations" class="hidden sm:inline-block text-sm font-semibold text-brown/80 hover:text-orange transition px-4 py-2">Reserve a Table</a>
+      <a href="#order" class="inline-block bg-orange hover:bg-orange-light transition text-white text-sm font-semibold px-5 py-3 rounded-full grain-shadow">Order Online</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 pt-14 pb-16 md:pt-20 md:pb-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="inline-flex items-center gap-2 badge-ring bg-butter/70 rounded-full px-4 py-1.5 mb-6">
+        <span class="text-orange text-sm">🧇</span>
+        <span class="text-xs font-semibold tracking-wide text-brown/70 uppercase">Chicago, since 2011</span>
+      </div>
+      <h1 class="text-[2.6rem] leading-[1.05] md:text-6xl font-semibold text-brown mb-6">
+        Breakfast worth<br class="hidden md:block"> waking up for.
+      </h1>
+      <p class="text-lg text-brown-light max-w-md mb-9 leading-relaxed">
+        Homemade waffles, fluffy pancakes, and hearty skillets — made fresh daily
+        across five Chicago neighborhoods.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#order" class="bg-brown hover:bg-brown-light transition text-white font-semibold px-7 py-4 rounded-full grain-shadow">Order Online</a>
+        <a href="#locations" class="border-2 border-brown/20 hover:border-orange hover:text-orange transition font-semibold px-7 py-4 rounded-full text-brown">Find a Location</a>
+      </div>
+      <div class="flex items-center gap-8 mt-12 pt-8 border-t border-orange/15">
+        <div><div class="text-2xl font-serif font-bold text-brown">14+</div><div class="text-xs text-brown-light uppercase tracking-wide">Years</div></div>
+        <div><div class="text-2xl font-serif font-bold text-brown">5</div><div class="text-xs text-brown-light uppercase tracking-wide">Locations</div></div>
+        <div><div class="text-2xl font-serif font-bold text-brown">1M+</div><div class="text-xs text-brown-light uppercase tracking-wide">Guests Served</div></div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="rounded-[2rem] overflow-hidden grain-shadow aspect-[4/5]">
+        <img src="img/chicken-waffle.webp" alt="Blueberry compote and chicken waffle" class="img-cover">
+      </div>
+      <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl grain-shadow p-4 flex items-center gap-3 max-w-[240px]">
+        <div class="w-11 h-11 rounded-full overflow-hidden shrink-0"><img src="img/waffles-best.webp" class="img-cover"></div>
+        <p class="text-xs text-brown-light leading-snug"><span class="font-semibold text-brown">Chicago's Waffles Best</span> — vanilla ice cream, berries, caramel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARD STRIP (underused credibility) -->
+<section class="bg-brown text-cream">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-5 flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
+    <span class="text-orange-light text-lg">★</span>
+    <p class="text-sm md:text-base font-medium tracking-wide">
+      Time Out Chicago's <span class="text-orange-light font-semibold">"Best New Breakfast Place"</span> — voted since we opened our doors in 2011
+    </p>
+  </div>
+</section>
+
+<!-- MENU SHOWCASE -->
+<section id="menu" class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+    <div>
+      <span class="text-orange text-sm font-semibold uppercase tracking-wide">On the menu</span>
+      <h2 class="text-3xl md:text-5xl font-semibold text-brown mt-3">Fan favorites</h2>
+    </div>
+    <a href="#order" class="text-brown font-semibold border-b-2 border-orange pb-0.5 hover:text-orange transition w-fit">View full menu →</a>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/dubai-choco.webp" alt="Dubai Chocolate Dream Waffle" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">Dubai Chocolate Dream Waffle</h3>
+      <p class="text-sm text-brown-light">Rich chocolate waffle, sliced strawberries, chocolate drizzle, powdered sugar.</p>
+    </article>
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/very-berry.webp" alt="Very Berry French Toast" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">Very Berry French Toast</h3>
+      <p class="text-sm text-brown-light">Traditional French toast topped with seasonal berries and vanilla frosting.</p>
+    </article>
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/nutella-pancakes.webp" alt="Nutella Dream Pancakes" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">Nutella Dream Pancakes</h3>
+      <p class="text-sm text-brown-light">Homemade pancakes topped with Nutella, vanilla sauce and wafer sticks.</p>
+    </article>
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/burrito.webp" alt="Buenos Dias Burrito" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">Buenos Dias Burrito</h3>
+      <p class="text-sm text-brown-light">Scrambled eggs, chorizo, peppers, guacamole, blended cheeses — with potatoes.</p>
+    </article>
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/lemon-cheesecake.webp" alt="Blueberry Lemon Cheesecake Waffle" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">Lemon Cheesecake Waffle</h3>
+      <p class="text-sm text-brown-light">Belgian waffle, homemade lemon cheesecake cream, fresh blueberries.</p>
+    </article>
+    <article class="group">
+      <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 grain-shadow"><img src="img/french-toast-flight.webp" alt="French Toast Flight" class="img-cover group-hover:scale-105 transition duration-500"></div>
+      <h3 class="font-serif text-xl font-semibold text-brown mb-1">French Toast Flight</h3>
+      <p class="text-sm text-brown-light">Three ways: very berry, red velvet, and cinnamon swirl.</p>
+    </article>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="bg-butter">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="rounded-[2rem] overflow-hidden grain-shadow aspect-[4/5] order-2 lg:order-1">
+      <img src="img/choco-deluxe.webp" alt="Choco Deluxe Waffle" class="img-cover">
+    </div>
+    <div class="order-1 lg:order-2">
+      <span class="text-orange text-sm font-semibold uppercase tracking-wide">Our story</span>
+      <h2 class="text-3xl md:text-5xl font-semibold text-brown mt-3 mb-6">Tradition meets<br>passion.</h2>
+      <p class="text-brown-light leading-relaxed mb-5">
+        For over a decade, we've brought exceptional breakfast experiences to Chicago —
+        starting as a single South Loop spot in 2011 and growing into five neighborhood
+        locations across the city.
+      </p>
+      <p class="text-brown-light leading-relaxed mb-8">
+        Every dish combines time-honored technique with modern creativity — locally
+        sourced daily, crafted with care, and served with the same warmth since day one.
+      </p>
+      <div class="grid grid-cols-3 gap-6">
+        <div><div class="font-serif text-2xl font-bold text-brown mb-1">Fresh</div><p class="text-xs text-brown-light">Locally sourced daily</p></div>
+        <div><div class="font-serif text-2xl font-bold text-brown mb-1">Passionate</div><p class="text-xs text-brown-light">Made to order</p></div>
+        <div><div class="font-serif text-2xl font-bold text-brown mb-1">Quality</div><p class="text-xs text-brown-light">Premium standards</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations" class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
+  <div class="text-center max-w-xl mx-auto mb-14">
+    <span class="text-orange text-sm font-semibold uppercase tracking-wide">Find us</span>
+    <h2 class="text-3xl md:text-5xl font-semibold text-brown mt-3 mb-4">Five Chicago neighborhoods</h2>
+    <p class="text-brown-light">Fresh ingredients, warm service, unforgettable flavors — wherever you are in the city.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+      <h3 class="font-serif text-lg font-semibold text-brown mb-1">South Loop</h3>
+      <p class="text-sm text-brown-light">1400 S Michigan Ave · Original location, est. 2011</p>
+    </div>
+    <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+      <h3 class="font-serif text-lg font-semibold text-brown mb-1">West Loop</h3>
+      <p class="text-sm text-brown-light">1104 W Madison St</p>
+    </div>
+    <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+      <h3 class="font-serif text-lg font-semibold text-brown mb-1">Lincoln Square</h3>
+      <p class="text-sm text-brown-light">4768 N Lincoln Ave</p>
+    </div>
+    <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+      <h3 class="font-serif text-lg font-semibold text-brown mb-1">Oak Park</h3>
+      <p class="text-sm text-brown-light">726 Lake St</p>
+    </div>
+    <div class="bg-white rounded-2xl grain-shadow p-6 border border-orange/10">
+      <h3 class="font-serif text-lg font-semibold text-brown mb-1">Willowbrook</h3>
+      <p class="text-sm text-brown-light">Full menu, same quality</p>
+    </div>
+    <div class="rounded-2xl p-6 bg-brown text-cream flex flex-col justify-center">
+      <p class="text-sm font-medium mb-2">Hours (South Loop &amp; West Loop)</p>
+      <p class="text-xs text-cream/70 leading-relaxed">Mon–Fri 7am–2pm<br>Sat–Sun 7am–3pm</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section id="catering" class="bg-brown text-cream">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="text-orange-light text-sm font-semibold uppercase tracking-wide">Premium service</span>
+      <h2 class="text-3xl md:text-5xl font-semibold mt-3 mb-6">Your favorite food,<br>delivered hot &amp; fresh.</h2>
+      <p class="text-cream/70 leading-relaxed mb-8 max-w-md">
+        Culinary excellence delivered right to your doorstep — perfect for events,
+        parties, and special occasions.
+      </p>
+      <ul class="space-y-3 mb-9 text-sm text-cream/80">
+        <li class="flex items-center gap-3"><span class="text-orange-light">✓</span> Fresh ingredients daily</li>
+        <li class="flex items-center gap-3"><span class="text-orange-light">✓</span> Customizable menu options</li>
+        <li class="flex items-center gap-3"><span class="text-orange-light">✓</span> On-time delivery guarantee</li>
+      </ul>
+      <a href="#" class="inline-block bg-orange hover:bg-orange-light transition text-white font-semibold px-7 py-4 rounded-full">Order Catering</a>
+    </div>
+    <div class="rounded-[2rem] overflow-hidden grain-shadow aspect-[4/5]">
+      <img src="img/omelet.webp" alt="Mediterranean Sunrise Omelet" class="img-cover">
+    </div>
+  </div>
+</section>
+
+<!-- GIFT CARDS -->
+<section id="gift" class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
+  <div class="bg-butter rounded-[2rem] grid lg:grid-cols-2 gap-10 items-center overflow-hidden">
+    <div class="p-10 md:p-16">
+      <span class="text-orange text-sm font-semibold uppercase tracking-wide">Give the gift of taste</span>
+      <h2 class="text-3xl md:text-4xl font-semibold text-brown mt-3 mb-6">Share the love, gift a meal.</h2>
+      <div class="grid sm:grid-cols-3 gap-6 mb-9">
+        <div><p class="font-serif font-semibold text-brown mb-1">Any Occasion</p><p class="text-xs text-brown-light">Birthdays, holidays, or just because</p></div>
+        <div><p class="font-serif font-semibold text-brown mb-1">Instant Delivery</p><p class="text-xs text-brown-light">Sent via email or text</p></div>
+        <div><p class="font-serif font-semibold text-brown mb-1">Valid 12 Months</p><p class="text-xs text-brown-light">No expiration fees</p></div>
+      </div>
+      <button onclick="alert('Demo only — gift card checkout connects here.')" class="bg-brown hover:bg-brown-light transition text-white font-semibold px-7 py-4 rounded-full">Buy a Gift Card</button>
+    </div>
+    <div class="h-full min-h-[280px]"><img src="img/sandwich.webp" alt="Classic Breakfast Sandwich" class="img-cover h-full"></div>
+  </div>
+</section>
+
+<!-- ORDER CTA -->
+<section id="order" class="max-w-7xl mx-auto px-6 md:px-10 pb-24">
+  <div class="bg-brown rounded-[2rem] text-center py-16 px-6 grain-shadow">
+    <h2 class="text-3xl md:text-4xl font-semibold text-cream mb-4">Hungry yet?</h2>
+    <p class="text-cream/70 mb-8 max-w-md mx-auto">Order pickup or delivery from your nearest Chicago Waffles location.</p>
+    <button onclick="alert('Demo only — this connects to your live ordering platform.')" class="bg-orange hover:bg-orange-light transition text-white font-semibold px-8 py-4 rounded-full">Order Online</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-orange/15">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="logo2.svg" alt="Chicago Waffles" class="h-8 w-auto mb-4">
+      <p class="text-sm text-brown-light leading-relaxed">Crafting exceptional culinary experiences with passion, quality, and dedication since 2011.</p>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Quick Links</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="#menu" class="hover:text-orange">Menu</a></li>
+        <li><a href="#locations" class="hover:text-orange">Locations</a></li>
+        <li><a href="#catering" class="hover:text-orange">Catering</a></li>
+        <li><a href="#gift" class="hover:text-orange">Gift Cards</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Follow</p>
+      <ul class="space-y-2 text-sm text-brown-light">
+        <li><a href="https://www.instagram.com/chicagowaffles/" class="hover:text-orange">Instagram</a></li>
+        <li><a href="https://www.facebook.com/chicagowaffles/" class="hover:text-orange">Facebook</a></li>
+        <li><a href="https://www.tiktok.com/@chicago_waffles" class="hover:text-orange">TikTok</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-serif font-semibold text-brown mb-4">Visit</p>
+      <p class="text-sm text-brown-light">Five locations across Chicago &amp; Oak Park.</p>
+    </div>
+  </div>
+  <div class="border-t border-orange/15 py-6 text-center text-xs text-brown-light">© 2026 Chicago Waffles. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
