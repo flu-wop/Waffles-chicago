@@ -34,6 +34,15 @@
   .img-cover { object-fit: cover; width: 100%; height: 100%; }
   .grain-shadow { box-shadow: 0 20px 40px -12px rgba(77,43,36,0.18); }
   .badge-ring { border: 1.5px solid rgba(250,125,35,0.35); }
+  .marquee-track { animation: marquee-scroll 34s linear infinite; }
+  .marquee-track:hover { animation-play-state: paused; }
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+  }
 </style>
 </head>
 <body class="antialiased">
@@ -77,10 +86,10 @@
         <a href="#order" class="bg-brown hover:bg-brown-light transition text-white font-semibold px-7 py-4 rounded-full grain-shadow">Order Online</a>
         <a href="#locations" class="border-2 border-brown/20 hover:border-orange hover:text-orange transition font-semibold px-7 py-4 rounded-full text-brown">Find a Location</a>
       </div>
-      <div class="flex items-center gap-8 mt-12 pt-8 border-t border-orange/15">
-        <div><div class="text-2xl font-serif font-bold text-brown">14+</div><div class="text-xs text-brown-light uppercase tracking-wide">Years</div></div>
-        <div><div class="text-2xl font-serif font-bold text-brown">5</div><div class="text-xs text-brown-light uppercase tracking-wide">Locations</div></div>
-        <div><div class="text-2xl font-serif font-bold text-brown">1M+</div><div class="text-xs text-brown-light uppercase tracking-wide">Guests Served</div></div>
+      <div class="flex items-center gap-8 mt-12 pt-8 border-t border-orange/15" id="stats-row">
+        <div><div class="text-2xl font-serif font-bold text-brown counter" data-target="14" data-suffix="+">0</div><div class="text-xs text-brown-light uppercase tracking-wide">Years</div></div>
+        <div><div class="text-2xl font-serif font-bold text-brown counter" data-target="5" data-suffix="">0</div><div class="text-xs text-brown-light uppercase tracking-wide">Locations</div></div>
+        <div><div class="text-2xl font-serif font-bold text-brown counter" data-target="1" data-suffix="M+">0</div><div class="text-xs text-brown-light uppercase tracking-wide">Guests Served</div></div>
       </div>
     </div>
     <div class="relative">
@@ -105,7 +114,38 @@
   </div>
 </section>
 
-<!-- MENU SHOWCASE -->
+<!-- AUTO-SCROLLING SHOWCASE STRIP -->
+<section class="py-10 overflow-hidden bg-butter/40">
+  <div class="marquee-track flex gap-5 w-max">
+    <div class="flex gap-5 shrink-0">
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/waffles-best.webp" class="img-cover" alt="Chicago's Waffles Best"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/chicken-waffle.webp" class="img-cover" alt="Blueberry Compote & Chicken Waffle"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/dubai-choco.webp" class="img-cover" alt="Dubai Chocolate Dream Waffle"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/choco-deluxe.webp" class="img-cover" alt="Choco Deluxe Waffle"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/lemon-cheesecake.webp" class="img-cover" alt="Blueberry Lemon Cheesecake Waffle"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/very-berry.webp" class="img-cover" alt="Very Berry French Toast"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/french-toast-flight.webp" class="img-cover" alt="French Toast Flight"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/nutella-pancakes.webp" class="img-cover" alt="Nutella Dream Pancakes"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/burrito.webp" class="img-cover" alt="Buenos Días Burrito"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/omelet.webp" class="img-cover" alt="Mediterranean Sunrise Omelet"></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/sandwich.webp" class="img-cover" alt="The Classic Breakfast Sandwich"></div>
+    </div>
+    <!-- duplicated set for a seamless loop -->
+    <div class="flex gap-5 shrink-0" aria-hidden="true">
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/waffles-best.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/chicken-waffle.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/dubai-choco.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/choco-deluxe.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/lemon-cheesecake.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/very-berry.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/french-toast-flight.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/nutella-pancakes.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/burrito.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/omelet.webp" class="img-cover" alt=""></div>
+      <div class="w-56 h-40 rounded-2xl overflow-hidden grain-shadow shrink-0"><img src="img/sandwich.webp" class="img-cover" alt=""></div>
+    </div>
+  </div>
+</section>
 <section id="menu" class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
   <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
     <div>
@@ -295,6 +335,39 @@
   </div>
   <div class="border-t border-orange/15 py-6 text-center text-xs text-brown-light">© 2026 Chicago Waffles. All rights reserved.</div>
 </footer>
+
+<script>
+  // Count-up stats — animate from 0 once scrolled into view, only once.
+  const counters = document.querySelectorAll('.counter');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateCounter(el) {
+    const target = parseFloat(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
+    if (prefersReducedMotion) { el.textContent = target + suffix; return; }
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      const value = Math.round(target * eased);
+      el.textContent = value + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach((el) => counterObserver.observe(el));
+</script>
 
 </body>
 </html>
