@@ -104,14 +104,39 @@
 
 
 <!-- HERO -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 pt-16 pb-10 text-center">
+<section class="max-w-5xl mx-auto px-6 md:px-10 pt-16 pb-6 text-center">
   <span class="text-orange text-sm font-semibold uppercase tracking-wide">Full Menu</span>
   <h1 class="text-4xl md:text-6xl font-semibold text-brown mt-3 mb-4">Made from scratch, every plate.</h1>
   <p class="text-brown-light max-w-2xl mx-auto">Prices reflect our South Loop location and may vary slightly by neighborhood.</p>
 </section>
 
+<!-- CATEGORY FILTER -->
+<section class="sticky top-20 z-40 bg-cream/95 backdrop-blur border-b border-orange/15 py-4">
+  <div class="max-w-5xl mx-auto px-6 md:px-10 overflow-x-auto">
+    <div class="flex gap-2 w-max" id="category-pills">
+      <button data-cat="all" class="cat-pill active px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">All</button>
+      <button data-cat="waffles" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Waffles Wonderland</button>
+      <button data-cat="skillets" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Rustic Skillets</button>
+      <button data-cat="omelets" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Signature Omelets</button>
+      <button data-cat="hola" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">¡Hola Breakfast!</button>
+      <button data-cat="frenchie" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Frenchie Bites</button>
+      <button data-cat="pancakes" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Pancake Paradise</button>
+      <button data-cat="sandwiches" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Sandwiches</button>
+      <button data-cat="cocktails" class="cat-pill px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition">Cocktails</button>
+    </div>
+  </div>
+</section>
+
+<p class="max-w-5xl mx-auto px-6 md:px-10 pt-6 text-xs text-brown-light/70 italic">Showing our most popular dishes — ask your server for the complete menu.</p>
+
+<style>
+  .cat-pill { background: white; color: #4D2B24; border: 1px solid rgba(250,125,35,0.2); }
+  .cat-pill.active { background: #FA7D23; color: white; border-color: #FA7D23; }
+  .menu-category { scroll-margin-top: 160px; }
+</style>
+
 <!-- WAFFLES WONDERLAND -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="waffles">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Waffles Wonderland</h2>
   <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
     <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">Original Belgian</p><p class="text-sm text-brown-light">Golden, airy, and timeless — our signature waffle that defines simple perfection.</p></div><p class="font-semibold text-orange whitespace-nowrap">$14.99</p></div>
@@ -127,7 +152,7 @@
 </section>
 
 <!-- RUSTIC SKILLETS -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="skillets">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Rustic Skillets</h2>
   <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-brown-light">
     <div><p class="font-serif font-semibold text-brown">Build Your Own Skillet</p><p>Two eggs any style with potatoes and a choice of toast or pancakes. Add ingredients for an extra price.</p></div>
@@ -140,7 +165,7 @@
 </section>
 
 <!-- SIGNATURE OMELETS -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="omelets">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Signature Omelets</h2>
   <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-brown-light">
     <div><p class="font-serif font-semibold text-brown">Mediterranean Sunrise</p><p>Spinach, feta cheese and tomatoes.</p></div>
@@ -149,7 +174,7 @@
 </section>
 
 <!-- HOLA BREAKFAST -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="hola">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">¡Hola Breakfast!</h2>
   <div class="text-sm text-brown-light">
     <p class="font-serif font-semibold text-brown">Buenos Días Burrito</p>
@@ -158,7 +183,7 @@
 </section>
 
 <!-- FRENCHIE BITES -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="frenchie">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Frenchie Bites</h2>
   <div class="text-sm text-brown-light">
     <p class="font-serif font-semibold text-brown">French Toast Flight</p>
@@ -167,7 +192,7 @@
 </section>
 
 <!-- PANCAKE PARADISE -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="pancakes">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Pancake Paradise</h2>
   <div class="text-sm text-brown-light">
     <p class="font-serif font-semibold text-brown">Nutella Dream Pancakes</p>
@@ -176,7 +201,7 @@
 </section>
 
 <!-- WAFFLE SANDWICHES -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="sandwiches">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-6 border-b border-orange/20 pb-3">Sandwiches</h2>
   <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
     <div class="flex justify-between gap-4"><div><p class="font-serif font-semibold">The Classic Breakfast Sandwich</p><p class="text-sm text-brown-light">Over-medium egg, crispy bacon, and melted American cheese on a buttery bun. Served with fries or fruit.</p></div><p class="font-semibold text-orange whitespace-nowrap">$—</p></div>
@@ -187,7 +212,7 @@
 </section>
 
 <!-- COCKTAILS -->
-<section class="max-w-5xl mx-auto px-6 md:px-10 py-8">
+<section class="menu-category max-w-5xl mx-auto px-6 md:px-10 py-8" data-category="cocktails">
   <h2 class="text-2xl md:text-3xl font-semibold text-brown mb-2 border-b border-orange/20 pb-3">Cocktails</h2>
   <p class="text-xs text-brown-light mt-2 mb-6">Must be 21 or older to order.</p>
   <div class="grid md:grid-cols-2 gap-x-10 gap-y-6">
@@ -233,9 +258,9 @@
     <div>
       <p class="font-serif font-semibold text-brown mb-4">Legal</p>
       <ul class="space-y-2 text-sm text-brown-light">
-        <li><a href="#" onclick="event.preventDefault(); alert('Demo only — link to your real policy page.')" class="hover:text-orange">Privacy Policy</a></li>
-        <li><a href="#" onclick="event.preventDefault(); alert('Demo only — link to your real policy page.')" class="hover:text-orange">Refund &amp; Cancellation Policy</a></li>
-        <li><a href="#" onclick="event.preventDefault(); alert('Demo only — link to your real policy page.')" class="hover:text-orange">Terms of Service</a></li>
+        <li><a href="privacy-policy.html" class="hover:text-orange">Privacy Policy</a></li>
+        <li><a href="refund-policy.html" class="hover:text-orange">Refund &amp; Cancellation Policy</a></li>
+        <li><a href="terms-of-service.html" class="hover:text-orange">Terms of Service</a></li>
       </ul>
     </div>
   </div>
@@ -255,5 +280,20 @@
     document.body.style.overflow = '';
   }
 </script>
+<script>
+  const pills = document.querySelectorAll('.cat-pill');
+  const categories = document.querySelectorAll('.menu-category');
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      pills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+      const target = pill.dataset.cat;
+      categories.forEach((cat) => {
+        cat.style.display = (target === 'all' || cat.dataset.category === target) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
