@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import { CartDrawer, Grain, ReserveModal, Toast } from "@/components/Overlays";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://waffles-chicago.vercel.app"),
   title: {
     default: "Chicago Waffles — Breakfast & Brunch Since 2011",
     template: "%s · Chicago Waffles",
