@@ -66,3 +66,15 @@ h3 {
     animation: none !important;
   }
 }
+
+/* waffle loader */
+html.cw-loading,
+html.cw-loading body { overflow: hidden; }
+@keyframes cw-spin { to { transform: rotate(360deg); } }
+@keyframes cw-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.9) translateY(2px); }
+}
+.cw-spin { animation: cw-spin 1.6s cubic-bezier(0.55, 0.1, 0.35, 0.9) infinite; }
+.cw-pulse { animation: cw-pulse 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .cw-spin, .cw-pulse { animation-duration: 6s; } }

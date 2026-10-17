@@ -8,6 +8,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import { CartProvider } from "@/components/CartProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Loader from "@/components/Loader";
 import { CartDrawer, Grain, ReserveModal, Toast } from "@/components/Overlays";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <CartProvider>
+          <Loader />
           <SmoothScroll />
           <Header />
           <main>{children}</main>

@@ -7,6 +7,7 @@ import { motion, useScroll, useTransform, type MotionValue } from "framer-motion
 import { Headline, Magnetic } from "../motion";
 import { OpenBadge, Reassure } from "../ui";
 import { useCart } from "../CartProvider";
+import PromoRail from "./PromoRail";
 import { galleryBy } from "@/lib/data";
 import { cn } from "@/lib/cn";
 
@@ -83,7 +84,10 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-6 md:pt-24">
+      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-6 md:pt-40">
+        <div className="mb-8 md:absolute md:left-6 md:top-24 md:mb-0 md:w-[min(54%,38rem)]">
+          <PromoRail />
+        </div>
         <motion.div style={{ y: textY }} className="max-w-[40rem] text-center md:max-w-[31rem] md:text-left lg:max-w-[34rem]">
           <div className="mb-6 flex justify-center md:justify-start">
             <OpenBadge loc={location} />
