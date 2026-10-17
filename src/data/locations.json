@@ -1,0 +1,247 @@
+[
+ {
+  "slug": "south-loop",
+  "name": "South Loop",
+  "blurb": "Located in the bustling South Loop, our flagship location brings the best of Chicago breakfast culture to the heart of the city. Enjoy our signature waffles and brunch favorites in a modern, spacious setting perfect for families and friends.",
+  "street": "1400 S Michigan Ave",
+  "city": "Chicago",
+  "state": "IL",
+  "zip": "60605",
+  "phone": "(312) 854-8572",
+  "phoneRaw": "3128548572",
+  "lat": 41.863777,
+  "lng": -87.624549,
+  "hours": {
+   "Monday": [
+    "07:00",
+    "15:00"
+   ],
+   "Tuesday": [
+    "07:00",
+    "15:00"
+   ],
+   "Wednesday": [
+    "07:00",
+    "15:00"
+   ],
+   "Thursday": [
+    "07:00",
+    "15:00"
+   ],
+   "Friday": [
+    "07:00",
+    "15:00"
+   ],
+   "Saturday": [
+    "07:00",
+    "16:00"
+   ],
+   "Sunday": [
+    "07:00",
+    "16:00"
+   ]
+  },
+  "menu": "standard",
+  "photos": [
+   "/media/JCA06025-HDR.webp",
+   "/media/JCA06045-HDR.webp",
+   "/media/JCA06106.webp",
+   "/media/JCA06060-HDR.webp"
+  ]
+ },
+ {
+  "slug": "west-loop",
+  "name": "West Loop",
+  "blurb": "In the trendy West Loop, discover our contemporary take on classic breakfast favorites. This location combines industrial chic with homey comfort, offering a perfect spot for business breakfasts or weekend brunch with friends.",
+  "street": "1104 West Madison St",
+  "city": "Chicago",
+  "state": "IL",
+  "zip": "60607",
+  "phone": "(312) 837-3935",
+  "phoneRaw": "3128373935",
+  "lat": 41.881839,
+  "lng": -87.654715,
+  "hours": {
+   "Monday": [
+    "07:00",
+    "14:00"
+   ],
+   "Tuesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Wednesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Thursday": [
+    "07:00",
+    "14:00"
+   ],
+   "Friday": [
+    "07:00",
+    "14:00"
+   ],
+   "Saturday": [
+    "07:00",
+    "15:00"
+   ],
+   "Sunday": [
+    "07:00",
+    "15:00"
+   ]
+  },
+  "menu": "standard",
+  "photos": [
+   "/media/JCA05910-HDR.webp",
+   "/media/JCA05960-HDR.webp",
+   "/media/JCA05980-HDR.webp",
+   "/media/JCA05900-HDR.webp"
+  ]
+ },
+ {
+  "slug": "lincoln-square",
+  "name": "Lincoln Square",
+  "blurb": "Experience the cozy charm of our Lincoln Square location, where traditional breakfast meets modern comfort. Nestled in the heart of this vibrant neighborhood, we serve up fresh, made-to-order meals in a warm, welcoming atmosphere.",
+  "street": "4768 N. Lincoln Ave",
+  "city": "Chicago",
+  "state": "IL",
+  "zip": "60625",
+  "phone": "(773) 654-3233",
+  "phoneRaw": "7736543233",
+  "lat": 41.968389,
+  "lng": -87.6886,
+  "hours": {
+   "Monday": [
+    "07:00",
+    "14:00"
+   ],
+   "Tuesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Wednesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Thursday": [
+    "07:00",
+    "14:00"
+   ],
+   "Friday": [
+    "07:00",
+    "14:00"
+   ],
+   "Saturday": [
+    "07:00",
+    "15:00"
+   ],
+   "Sunday": [
+    "07:00",
+    "15:00"
+   ]
+  },
+  "menu": "standard",
+  "photos": []
+ },
+ {
+  "slug": "oak-park",
+  "name": "Oak Park",
+  "blurb": "Nestled in historic Oak Park, our location offers a charming neighborhood feel with all the quality and flavor you expect from Chicago Waffles. Perfect for a leisurely weekend brunch or a quick weekday breakfast on the go.",
+  "street": "726 Lake St",
+  "city": "Oak Park",
+  "state": "IL",
+  "zip": "60301",
+  "phone": "(847) 921-4003",
+  "phoneRaw": "8479214003",
+  "lat": 41.888763,
+  "lng": -87.794035,
+  "hours": {
+   "Monday": [
+    "07:00",
+    "14:00"
+   ],
+   "Tuesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Wednesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Thursday": [
+    "07:00",
+    "14:00"
+   ],
+   "Friday": [
+    "07:00",
+    "14:00"
+   ],
+   "Saturday": [
+    "07:00",
+    "15:00"
+   ],
+   "Sunday": [
+    "07:00",
+    "15:00"
+   ]
+  },
+  "menu": "standard",
+  "photos": [
+   "/media/JCA07573-HDR.webp",
+   "/media/JCA07598-HDR.webp",
+   "/media/JCA07388-HDR.webp",
+   "/media/JCA07363-HDR.webp",
+   "/media/JCA07358-HDR.webp",
+   "/media/JCA07353-HDR.webp"
+  ]
+ },
+ {
+  "slug": "willowbrook",
+  "name": "Willowbrook",
+  "blurb": "Our Willowbrook location brings the authentic Chicago Waffles experience to the suburbs. With ample parking and a family-friendly atmosphere, it\\'s the perfect destination for weekend breakfast adventures or weekday morning treats.",
+  "street": "10S642 Kingery Hwy",
+  "city": "Willowbrook",
+  "state": "IL",
+  "zip": "60527",
+  "phone": "(630) 568-3199",
+  "phoneRaw": "6305683199",
+  "lat": 41.718432,
+  "lng": -87.945794,
+  "hours": {
+   "Monday": [
+    "07:00",
+    "14:00"
+   ],
+   "Tuesday": null,
+   "Wednesday": [
+    "07:00",
+    "14:00"
+   ],
+   "Thursday": [
+    "07:00",
+    "14:00"
+   ],
+   "Friday": [
+    "07:00",
+    "14:00"
+   ],
+   "Saturday": [
+    "07:00",
+    "15:00"
+   ],
+   "Sunday": [
+    "07:00",
+    "15:00"
+   ]
+  },
+  "menu": "willowbrook",
+  "photos": [
+   "/media/JCA07268-HDR.webp",
+   "/media/JCA07158-HDR.webp",
+   "/media/JCA07138-HDR.webp",
+   "/media/JCA06903-HDR.webp",
+   "/media/JCA06853-HDR.webp"
+  ]
+ }
+]
