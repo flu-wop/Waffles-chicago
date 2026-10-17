@@ -29,6 +29,21 @@ export default function SmoothScroll() {
   }, []);
 
   useEffect(() => {
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as HTMLElement).closest("a");
+      if (!a || a.target === "_blank" || e.metaKey || e.ctrlKey) return;
+      const u = new URL(a.href, location.href);
+      if (u.origin === location.origin && u.pathname === location.pathname && !u.hash) {
+        if (window.__lenis) window.__lenis.scrollTo(0, { duration: 1 });
+        else window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, []);
+
+  useEffect(() => {
     if (window.location.hash) return;
     if (window.__lenis) window.__lenis.scrollTo(0, { immediate: true });
     else window.scrollTo(0, 0);
