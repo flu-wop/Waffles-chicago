@@ -100,3 +100,24 @@ export function mapsUrl(l: Location): string {
     `${l.street}, ${l.city}, ${l.state} ${l.zip}`
   )}`;
 }
+
+// Gallery photo titles that differ from the menu's item names.
+const PHOTO_ALIASES: Record<string, string> = {
+  "paco taco": "Paco Tacos",
+  "red velvet bliss waffle": "Red Velvet Double Chocolate Waffle",
+  "cheddar & short rib waffle": "Braised Beef & Cheddar Waffle",
+  "chicago waffle's best": "Chicago Waffles Best",
+  "nutella dream pancakes": "Nutella Pancakes",
+};
+const normName = (s: string) =>
+  s.toLowerCase().replace(/[’']/g, "").replace(/\s+/g, " ").trim();
+
+/** The orderable menu item for a food photo, if that dish is on the given menu. */
+export function menuItemForPhoto(alt: string, key: MenuKey): MenuItem | undefined {
+  const a = normName(PHOTO_ALIASES[alt.toLowerCase().replace(/’/g, "'")] ?? alt);
+  for (const s of menus[key]) {
+    const f = s.items.find((i) => normName(i.name) === a && i.price != null);
+    if (f) return f;
+  }
+  return undefined;
+}
